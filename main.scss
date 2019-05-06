@@ -1,0 +1,29 @@
+@import "variables/colors";
+@import "variables/media-queries";
+
+@import "components/button";
+@import "components/nav";
+@import "components/search";
+@import "components/links";
+
+body{
+    margin:0;
+    background: url('karate-do.jpg');
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-attachment:scroll;
+        
+        @include mobile{
+            background: url('karate-do.jpg');
+            background-repeat: no-repeat;
+        -webkit-background-size: length;
+        -moz-background-size: length_y;
+        -o-background-size:length_y;
+        background-size: length_y;
+        background-attachment: fixed;
+        background-color: grey;
+        }
+}

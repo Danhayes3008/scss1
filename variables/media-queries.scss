@@ -1,0 +1,37 @@
+// this file contains the size of the screens for different types of devises this website will posibly displayed on
+$tablet-width: 768px;
+
+$desktop-width: 992px;
+
+$large-desktop-width: 1200px;
+
+
+
+@mixin mobile{
+    @media(max-width: $tablet-width - 1px){
+        
+        @content;
+    }
+}
+
+@mixin tablet {
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+
+        @content;
+
+    }
+
+}
+
+
+
+@mixin desktop {
+
+    @media (min-width: $desktop-width) and (max-width: $large-desktop-width - 1px) {
+
+        @content;
+
+    }
+
+}
